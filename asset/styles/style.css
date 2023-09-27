@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');
+body{
+    margin: auto;
+    max-width: 1440px;
+    border: 5px solid;
+}
+.page-wrapper{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+.intro{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    border-bottom: 5px solid;
+}
+header{
+    width: 100%;
+    border: none;
+    font-family: 'Leckerli One', cursive;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    min-height:150px;
+    order:1;
+}
+header h1{
+    font-size: 6rem;
+    z-index: 4;
+    color: red;
+    position: absolute;
+    transform: rotate3d(8, 6, 5, 338deg);
+    margin: 1%;
+}
+header h2{
+    background-color: rgb(255, 174, 0);
+    margin: 0;
+    padding: 1%;
+    background-image: url(/asset/images/16242655_3797.jpg);
+    background-size: cover;
+    background-position: top;
+    
+
+
+}
+.preamble{
+    height: auto;
+    position: absolute;
+    width: 340px;
+    height: 140px;
+    border-radius: 0% 0% 64% 100% / 0% 0% 0% 100%;
+    z-index: 3;
+    right: 0;
+    order: 2;
+}
+.summary::before{
+    content: "";
+    position: absolute;
+    border-radius: 0% 0% 64% 100% / 0% 0% 0% 100%;
+    border-left: 5px solid black;
+    border-bottom: 5px solid;
+    background-color: white;
+    z-index: 1;
+    width: 380px;
+    height: 180px;
+    right: 0;
+    top: 0;
+    background-image: url(/asset/images/32972005_7994576.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.summary{
+    width: 100%;
+    order: 3;
+    background-image: url(/asset/images/16242655_3797.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+.summary p {
+    text-align: left;
+}
+.preamble p{
+    display: none;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: red; 
+}
+.main div {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    min-height: 200px;
+}
+.main h3{
+    grid-row-start: span 5 ;
+    background-image: url(/asset/images/8879180.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main p {
+    opacity: 0;
+    position: relative;
+    left: 0;
+    top: 50%;
+}
+.main h3:hover ~ p{
+    opacity: 1;
+}
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 5px solid;
+    background-color: wheat;
+    align-items: center;
+    
+}
+.wrapper{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+.sidebar{
+    position:relative ;
+    bottom: 0;
+    right: 0;
+    background-image: url(/asset/images/1111602_8315.jpg);
+    background-size: cover;
+    background-position: bottom;
+    border-top: 5px solid black;
+}
